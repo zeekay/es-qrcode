@@ -1,4 +1,4 @@
-import {PNG} from 'pngjs'
+import PNG from 'pnglib-es6'
 
 import {getImageWidth, getOptions, qrToImageData} from './utils'
 
@@ -16,26 +16,7 @@ export function render (qrData, options) {
   return pngImage
 }
 
-export function renderToDataURL (qrData, options, cb) {
-  if (typeof cb === 'undefined') {
-    cb = options
-    options = undefined
-  }
-
+export function renderToDataURL (qrData, options) {
   var png = render(qrData, options)
-  var buffer = []
-
-  png.on('error', cb)
-
-  png.on('data', function (data) {
-    buffer.push(data)
-  })
-
-  png.on('end', function () {
-    var url = 'data:image/png;base64,'
-    url += Buffer.concat(buffer).toString('base64')
-    cb(null, url)
-  })
-
-  png.pack()
+  return png.getDataURL()
 }
