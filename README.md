@@ -360,9 +360,10 @@ toCanvas('text', { errorCorrectionLevel: 'H' }).then((canvas) => {
 })
 ```
 
-#### `toDataURL(text, [options], [cb(error, url)])`
-#### `toDataURL(canvasElement, text, [options], [cb(error, url)])`
-Returns a Data URI containing a representation of the QR Code image.<br>
+#### `toDataURL(text, [options])` returns `Promise<url>`
+#### `toDataURL(canvasElement, text, [options])` returns `Promise<url>`
+Returns a Data URI containing a representation of the QR Code image.
+
 If provided, `canvasElement` will be used as canvas to generate the data URI.
 
 ##### `canvasElement`
