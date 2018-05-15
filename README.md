@@ -332,8 +332,6 @@ Type: `Object`
 }
 ```
 
-<br>
-
 #### `toCanvas(canvasElement, text, [options])`
 #### `toCanvas(text, [options])`
 Draws qr code symbol to canvas.<br>
@@ -360,9 +358,10 @@ toCanvas('text', { errorCorrectionLevel: 'H' }).then((canvas) => {
 })
 ```
 
-#### `toDataURL(text, [options])` returns `Promise<url>`
-#### `toDataURL(canvasElement, text, [options])` returns `Promise<url>`
-Returns a Data URI containing a representation of the QR Code image.
+#### `toDataURL(text, [options])`
+#### `toDataURL(canvasElement, text, [options])`
+Returns a Promise which resolves to Data URI containing a representation of the
+QR Code image.
 
 If provided, `canvasElement` will be used as canvas to generate the data URI.
 
@@ -408,11 +407,11 @@ toDataURL('text', opts).then((url) => {
   img.src = url
 })
 ```
-<br>
 
 #### `toString(text, [options])`
 
-Returns a string representation of the QR Code.<br>
+Returns a Promise which resolves to a string representation of the QR Code.
+
 Currently only works for SVG.
 
 ##### `text`
