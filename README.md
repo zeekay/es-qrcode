@@ -1,5 +1,5 @@
-# node-qrcode
-> QR code/2d barcode generator.
+# es-qrcode
+> QR code/2d barcode generator forked for ES module support
 
 [![Travis](https://img.shields.io/travis/soldair/node-qrcode.svg?style=flat-square)](http://travis-ci.org/soldair/node-qrcode)
 [![npm](https://img.shields.io/npm/v/qrcode.svg?style=flat-square)](https://www.npmjs.com/package/qrcode)
@@ -19,7 +19,7 @@
 - [License](#license)
 
 ## Highlights
-- Works on server and client (and react native with svg)
+- ES Module support
 - CLI utility
 - Save QR code as image
 - Support for Numeric, Alphanumeric, Kanji and Byte mode
@@ -27,6 +27,9 @@
 - Support for chinese, cyrillic, greek and japanese characters
 - Support for multibyte characters (like emojis :smile:)
 - Auto generates optimized segments for best data compression and smallest QR Code size
+
+Note: This fork only supports the browser, check out the [original
+project](https://github.com/solidair/node-qrcode) for server support.
 
 ## Installation
 Inside your project folder do:
