@@ -1,7 +1,7 @@
 {
   "name": "qrcode-lite",
   "description": "QRCode / 2d Barcode api for browser rewritten in ES modules",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Zach Kelling <z@zeekay.io>",
   "contributors": [
     "Ryan Day <soldair@gmail.com>",
