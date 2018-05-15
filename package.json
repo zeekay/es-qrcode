@@ -21,7 +21,7 @@
     "lib",
     "helper"
   ],
-  "homepage": "http://github.com/zeekay/es-qrcode",
+  "homepage": "http://github.com/zeekay/qrcode-lite",
   "license": "MIT",
   "scripts": {
     "lint": "standard",
@@ -51,7 +51,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/zeekay/es-qrcode.git"
+    "url": "git://github.com/zeekay/qrcode-lite.git"
   },
   "engines": {
     "node": ">=4"

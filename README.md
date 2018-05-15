@@ -1,4 +1,4 @@
-# es-qrcode
+# qrcode-lite
 > QR code/2d barcode generator forked for ES module support
 
 [![Travis](https://img.shields.io/travis/soldair/node-qrcode.svg?style=flat-square)](http://travis-ci.org/soldair/node-qrcode)
