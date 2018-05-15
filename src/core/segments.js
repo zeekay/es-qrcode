@@ -1,13 +1,12 @@
-import dijkstra from 'dijkstrajs'
-
-
 import * as Mode             from './mode'
 import * as Regex            from './regex'
 import AlphanumericData      from './alphanumeric-data'
-import ByteData         from './byte-data'
-import KanjiData        from './kanji-data'
+import ByteData              from './byte-data'
+import KanjiData             from './kanji-data'
 import NumericData           from './numeric-data'
+import {findPath}            from './dijkstra'
 import {isKanjiModeEnabled}  from './utils'
+
 /**
  * Returns UTF8 byte length
  *
@@ -304,7 +303,7 @@ export function fromString(data, version) {
 
   var nodes = buildNodes(segs)
   var graph = buildGraph(nodes, version)
-  var path = dijkstra.find_path(graph.map, 'start', 'end')
+  var path = findPath(graph.map, 'start', 'end')
 
   var optimizedSegs = []
   for (var i = 1; i < path.length - 1; i++) {

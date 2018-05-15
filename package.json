@@ -31,7 +31,6 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "dijkstrajs": "^1.0.1",
     "pnglib-es6": "^1.0.1"
   },
   "devDependencies": {
