@@ -2,9 +2,9 @@
 > QR code/2d barcode generator forked for ES module support
 
 [![Travis](https://img.shields.io/travis/soldair/node-qrcode.svg?style=flat-square)](http://travis-ci.org/soldair/node-qrcode)
-[![npm](https://img.shields.io/npm/v/qrcode.svg?style=flat-square)](https://www.npmjs.com/package/qrcode)
-[![npm](https://img.shields.io/npm/dt/qrcode.svg?style=flat-square)](https://www.npmjs.com/package/qrcode)
-[![npm](https://img.shields.io/npm/l/qrcode.svg?style=flat-square)](https://github.com/soldair/node-qrcode/blob/master/license)
+[![npm](https://img.shields.io/npm/v/qrcode.svg?style=flat-square)](https://www.npmjs.com/package/qrcode-lite)
+[![npm](https://img.shields.io/npm/dt/qrcode.svg?style=flat-square)](https://www.npmjs.com/package/qrcode-lite)
+[![npm](https://img.shields.io/npm/l/qrcode.svg?style=flat-square)](https://github.com/zeekay/qrcode-lite/master/LICENSE)
 
 - [Highlights](#highlights)
 - [Installation](#installation)
