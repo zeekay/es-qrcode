@@ -27,7 +27,7 @@
     "lint": "standard",
     "pretest": "npm run lint",
     "test": "node test.js",
-    "build": "node build.js",
+    "build": "handroll src/index.js --cjs -o lib/qrcode.js && handroll src/index.js --es -o lib/qrcode.mjs",
     "prepublish": "npm run build"
   },
   "dependencies": {
