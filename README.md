@@ -28,7 +28,7 @@
 - Auto generates optimized segments for best data compression and smallest QR Code size
 
 Note: This fork only supports the browser, check out the [original
-project](https://github.com/solidair/qrcode-lite) for server support.
+project](https://github.com/soldair/node-qrcode) for server support.
 
 ## Installation
 Inside your project folder do:
